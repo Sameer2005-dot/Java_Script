@@ -50,3 +50,30 @@ console.log(typeof myFunction);
 // Array => object
 // Object => object
 // FDunctions => function
+
+
+// --------------------------Stack and Heap memory in JS--------------------------- //
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+// In below define how to store primitive datatypes in stack memory
+let myName = "SameerJena"
+
+let anotherName = myName
+anotherName = "JenaSameer"
+
+console.log(myName);
+console.log(anotherName);
+
+// In below define how to store Non-Primitive datatypes in heap memory
+let UserOne = {
+    email : "user@gmail.com",
+    upi : "user@axl"
+}
+
+let UserTwo = UserOne
+UserTwo.email = "Sameer@gmail.com"
+
+console.log(UserOne);
+console.log(UserTwo);
+
